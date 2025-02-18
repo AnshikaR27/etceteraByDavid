@@ -1,12 +1,9 @@
-class Cat:
-    # CLASS VARIABLE
-    MEOWS = 3
-
-    def meow(self):
-        for _ in range(Cat.MEOWS):
-            print("meow")
-
-cat = Cat()
-cat.meow()
+def meow(n: int):
+    for _ in range(n):
+        print("meow")
 
 
+# yeh apne aisa hints de sakte hai variable_name:datatype_youwanttostore
+# aur isko pahele run karenge using mypy nameofthefile toh apne ko pata chalega errors and all.
+number: int = int(input("Number: "))
+meow(number)
