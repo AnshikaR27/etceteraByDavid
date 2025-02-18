@@ -1,9 +1,16 @@
-def meow(n: int):
-    for _ in range(n):
-        print("meow")
+def meow(n:int) -> str:
+    # documenting a function
+    '''
+    Meow n times.
 
+    :param n: Number of times to meow
+    :type n: int
+    :raise TypeError: If n is not an int
+    :return: A string of n meows, one per line
+    :rtype: str
+    '''
+    return "meow\n" * n
 
-# yeh apne aisa hints de sakte hai variable_name:datatype_youwanttostore
-# aur isko pahele run karenge using mypy nameofthefile toh apne ko pata chalega errors and all.
 number: int = int(input("Number: "))
-meow(number)
+meows: str = meow(number)
+print(meows, end = "")
