@@ -1,8 +1,12 @@
-MEOWS = 3
+class Cat:
+    # CLASS VARIABLE
+    MEOWS = 3
 
-MEOWS = 4
+    def meow(self):
+        for _ in range(Cat.MEOWS):
+            print("meow")
 
-for _ in range(MEOWS):
-    print("meow")
+cat = Cat()
+cat.meow()
 
-# Python me aisa kuch hai nahi as such; ki constant wagere. matlb aisa convention hai ki constants ko tum jisme store karahe ho usse caps me likhte ho.
+
