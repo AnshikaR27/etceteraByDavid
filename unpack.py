@@ -1,13 +1,7 @@
-def total(galleons, sickles, knuts):
-    return (galleons * 17 + sickles) * 29 + knuts
+def f(*args, **kwargs):
+    print("Named: ", kwargs)
+
+f(galleons = 100, sickles = 50, knuts = 25, faltu = 0)
 
 
-# * this will unpack the list aur 3 diff/individual values pass krdega!
 
-coins = {"galleons" : 100,
-         "sickles": 50,
-         "knuts":25}
-
-# print(total(coins["galleons"], coins["galleons"], coins["sickles"]),"knuts")
-
-print(total(**coins), "Knuts")
