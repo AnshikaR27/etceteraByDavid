@@ -1,3 +1,7 @@
-first, _ = input("What's your name? ").split(" ")
+def total(galleons, sickles, knuts):
+    return (galleons * 17 + sickles) * 29 + knuts
 
-print(f"Hello, {first}")
+coins = [100, 50, 25]
+
+# * this will unpack the list aur 3 diff/individual values pass krdega!
+print(total(*coins),"knuts")
