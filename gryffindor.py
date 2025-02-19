@@ -5,6 +5,9 @@ students = [
     {"name":"Draco", "house":"Slytherin"},
 ]
 
-gryffindor = [
+gryffindors = [
     student["name"] for student in students if student["house"] == "Gryffindor"
 ]
+
+for gryffindor in sorted(gryffindors):
+    print(gryffindor)
