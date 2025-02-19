@@ -1,6 +1,7 @@
 students = ["Hermoine", "Harry", "Ron"]
 
-gryffindors = [{"name": student, "house": "Gryffindor"} for student in students]
+# dict comprehensions
+gryffindors = {student: "Gryffindor" for student in students}
 
 
 
