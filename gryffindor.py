@@ -5,9 +5,13 @@ students = [
     {"name":"Draco", "house":"Slytherin"},
 ]
 
-gryffindors = [
-    student["name"] for student in students if student["house"] == "Gryffindor"
-]
+def is_gryffindor(s):
+    return s["house"] == "Gryffindor"
 
-for gryffindor in sorted(gryffindors):
-    print(gryffindor)
+# isme we have used a filter func; aur joh filter func hai uska first arg should be true ya false aur yeh arg iss case me jaa raha hai from the is_gryffindor func, and the second has to be an iterable. and isme it would return only the true waale outcomes
+gryffindors = filter(is_gryffindor, students)
+
+for gryffindor in sorted(gryffindors, key= lamda s : s["name"]):
+    print(gryffindor["name"])
+
+
